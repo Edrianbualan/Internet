@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internet Load Purchase</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Internet Plan</h1>
+    </header>
+    
+    <main>
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="provider">Select Your Internet Provider:</label>
+                <div class="provider-select">
+                    <label>
+                        <input type="radio" name="provider" value="tm" required>
+                        <img src="tm.png" alt="TM Logo">
+                        <span>TM</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="provider" value="globe">
+                        <img src="Globe.png" alt="Globe Logo">
+                        <span>Globe</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="provider" value="dito">
+                        <img src="Dito.png" alt="DITO Logo">
+                        <span>DITO</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="provider" value="tnt">
+                        <img src="tnt.png" alt="TNT Logo">
+                        <span>TNT</span>
+                    </label>
+                </div>
+              <audio controls="" autoplay="" src="leg.mp3">
+                
+              </audio>
+            </div>
+
+            <div class="form-group">
+                <label for="plan">Select Plan:</label>
+                <select id="plan" name="plan" required>
+                    <option value="">--Select Load--</option>
+                  <option value="5" data-gb="5">5 pesos - 15 GB</option>
+                    <option value="10" data-gb="15">10 Pesos - 20 GB</option>
+                  <option value="15" data-gb="15">15 pesos - 30 GB</option>
+                    <option value="20" data-gb="30">20 Pesos - 40 GB</option>
+                    <option value="30" data-gb="30">30 Pesos - 60 GB</option>
+                  <option value="40" data-gb="40">40 pesos - 75 GB</option>
+                  <option value="50" data-gb="50">50 pesos - 85 GB</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="mobile-number">Enter Your Mobile Number:</label>
+                <input type="tel" id="mobile-number" name="mobile-number" placeholder="Enter your mobile number" required>
+            </div>
+            
+            <button type="submit">Buy Load</button>
+        </form>
+    </main>
+</body>
+</html>
